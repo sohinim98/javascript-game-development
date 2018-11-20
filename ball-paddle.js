@@ -43,7 +43,7 @@
 			function createBall() {
 				ctx.beginPath();
 				ctx.arc(x, y, ballRadius, 0, Math.PI*2, false);
-				ctx.fillStyle = "#8033FF";
+				ctx.fillStyle = "#3399FF";
 				ctx.fill();
 				ctx.closePath();
 			}
@@ -51,7 +51,7 @@
 			function createPaddle() {
 				ctx.beginPath();
 				ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleWidth);
-				ctx.fillStyle = "#8033FF";
+				ctx.fillStyle = "#D2691E";
 				ctx.fill();
 				ctx.closePath();
 			}
@@ -66,7 +66,7 @@
 							bricks[col][row].y = brickY;
 							ctx.beginPath();
 							ctx.rect(brickX, brickY, brickWidth, brickHeight);
-							ctx.fillStyle = "#8033FF";
+							ctx.fillStyle = "#FF8000";
 							ctx.fill();
 							ctx.closePath();
 						}
@@ -95,13 +95,13 @@
 
 			function createScore() {
 				ctx.font = "16px Arial";
-				ctx.fillStyle = "#8033FF";
+				ctx.fillStyle = "#000000";
 				ctx.fillText("Score: "+score, 8, 20);
 			}
 
 			function createLives() {
 				ctx.font = "16px Arial";
-				ctx.fillStyle = "#8033FF";
+				ctx.fillStyle = "#000000";
 				ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 			}
 
